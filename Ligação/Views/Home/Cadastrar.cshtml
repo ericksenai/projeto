@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<h1>Cadastrar Usuário e Senha: </h1>
+
+<div>class="text-center">
+
+    <form method="post" asp-action="Cadastrar">
+    <label>Usuário: </label>
+    <input type="text" name="Usuario" />
+    <label>Senha: </label>
+    <input type="password" name="Senha" />
+    <button action="submit">Entrar</button>
+    </form>
+</div>
+
+ <p>@ViewData["Message"]</p>
